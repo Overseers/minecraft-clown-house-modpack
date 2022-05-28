@@ -9,9 +9,7 @@ jobs:
       - name: "Set version number"
         run: "echo \"RELEASE_VERSION=${GITHUB_REF#refs/*/}\" >> $GITHUB_ENV"
       - run: "sudo apt install zip"
-      - run: "rm README.md"
-      - run: "zip release.zip ./modpack/"
-      - run: "ls"
+      - run: "zip -r release.zip ./modpack/"
       - uses: "ncipollo/release-action@v1"
         with:
           artifacts: "release.zip"
@@ -21,6 +19,7 @@ jobs:
         with:
           webhook: "${{secrets.DISCORD_WEBHOOK}}"
           message: |
-            "first line"
-            "second line"
-      # - run: "echo TODO: Update Curseforge"
+            A new version of the Clown Pack modpack (${env.RELEASE_VERSION}) is out!
+            >>> Instructions for installation and other info can be found here: https://github.com/Overseers/minecraft-clown-house-modpack/blob/main/README.md
+            >>> Download: https://github.com/Overseers/minecraft-clown-house-modpack/releases/tag/${env.RELEASE_VERSION}
+      # TODO: Add integration to CurseForge
