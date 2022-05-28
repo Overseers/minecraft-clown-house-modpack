@@ -15,7 +15,7 @@ jobs:
         with:
           artifacts: "release.zip"
           token: ${{secrets.GITHUB_TOKEN}}
-          tag: "${{GITHUB_REF/refs\/tags\//}}"
+          tag: "${GITHUB_REF/refs\/tags\//}"
       - uses: sebastianpopp/discord-action@releases/v1
         with:
           webhook: "${{secrets.DISCORD_WEBHOOK}}"
