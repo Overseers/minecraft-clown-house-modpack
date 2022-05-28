@@ -22,4 +22,3 @@ jobs:
             A new version of the Clown Pack modpack (${{env.RELEASE_VERSION}}) is out!
             >>> Instructions for installation and other info can be found here: https://github.com/Overseers/minecraft-clown-house-modpack/blob/main/README.md
             Download: https://github.com/Overseers/minecraft-clown-house-modpack/releases/tag/${{env.RELEASE_VERSION}}
-      # TODO: Add integration to CurseForge
