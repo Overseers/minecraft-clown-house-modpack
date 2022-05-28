@@ -9,14 +9,14 @@ jobs:
       - run: "sudo apt install zip"
       - run: "rm README.md"
       - run: "ls"
-      - run: "cd .."
+      - run: "zip release.zip ../minecraft-clown-house-modpack/"
       - run: "ls"
-      # - run: "zip test.zip minecraft-clown-house-modpack/"
-      - run: "echo TODO: Add zip step to create file"
-      - run: "echo TODO: Add release file to GitHub"
-      - run: "echo TODO: Add discord note"
-      - run: "echo TODO: Update Curseforge"
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "release.zip"
+          token: ${{secrets.GITHUB_TOKEN}}
       - uses: sebastianpopp/discord-action@releases/v1
         with:
           webhook: "${{secrets.DISCORD_WEBHOOK}}"
           message: "TEST"
+      # - run: "echo TODO: Update Curseforge"
