@@ -97,7 +97,7 @@
 	"Burn Vines" = true
 	"Quilted Wool" = true
 	"Celebratory Lamps" = true
-	"Variant Chests" = true
+	"Variant Chests" = false
 	Hedges = true
 	"Vertical Slabs" = true
 	"Nether Brick Fence Gate" = true
