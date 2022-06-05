@@ -10,9 +10,16 @@ jobs:
         run: "echo \"RELEASE_VERSION=${GITHUB_REF#refs/*/}\" >> $GITHUB_ENV"
       - run: "sudo apt install zip"
       - run: "cd modpack ; zip -r ../release.zip ./* ; cd .."
+      - name: "setup python"
+        uses: "actions/setup-python@v2"
+        with:
+          python-version: 3.9.0
+      - name: "Build server files"
+        run: "python ./scripts/create_server_files.py"
+      - run: "cd server_files ; zip -r ../server_files.zip ; cd .."
       - uses: "ncipollo/release-action@v1"
         with:
-          artifacts: "release.zip"
+          artifacts: "release.zip,server_files.zip"
           token: "${{secrets.GITHUB_TOKEN}}"
           tag: "${{env.RELEASE_VERSION}}"
       - uses: sebastianpopp/discord-action@releases/v1
@@ -21,4 +28,5 @@ jobs:
           message: |
             A new version of the Clown Pack modpack ${{env.RELEASE_VERSION}} is out!
             >>> Instructions for installation and other info can be found here: https://github.com/Overseers/minecraft-clown-house-modpack/blob/main/README.md
-            Download: https://github.com/Overseers/minecraft-clown-house-modpack/releases/download/${{env.RELEASE_VERSION}}/release.zip
+            Client Download: https://github.com/Overseers/minecraft-clown-house-modpack/releases/download/${{env.RELEASE_VERSION}}/release.zip
+            Server Download: https://github.com/Overseers/minecraft-clown-house-modpack/releases/download/${{env.RELEASE_VERSION}}/server_files.zip

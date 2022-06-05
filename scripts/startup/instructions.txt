@@ -1,0 +1,13 @@
+Windows:
+	1. Click/run the start.cmd file(notice the file extension of ".cmd")
+	2. Update the eula.txt file to change the line that says "eula=false" value to "eula=true"
+	3. Click/run the start.cmd file again
+	4. Wait for the world to be generated, then update server.properties as desired
+	5. Restart the server for the properties to take effect
+
+Linux:
+	1. Click/run the start.sh file(notice the file extension of ".sh")
+	2. Update the eula.txt file to change the line that says "eula=false" value to "eula=true"
+	3. Click/run the start.sh file again
+	4. Wait for the world to be generated, then update server.properties as desired
+	5. Restart the server for the properties to take effect
