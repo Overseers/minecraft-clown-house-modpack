@@ -1,8 +1,0 @@
-
-[common]
-	#Allow warp points
-	allowWarpPoints = true
-	#Maximum amount of warp points
-	#Range: > 0
-	maximumWarpPoints = 10
-

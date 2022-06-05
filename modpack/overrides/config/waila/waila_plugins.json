@@ -47,6 +47,9 @@
     "horse_speed": true,
     "breeding_cooldown": true
   },
+  "woot": {
+    "display_layout_items": true
+  },
   "vampirism": {
     "show_player_info": true,
     "show_creature_info": true

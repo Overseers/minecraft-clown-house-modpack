@@ -25,7 +25,7 @@
 	#Whether glass bottles should be automatically be converted to blood bottles when needed
 	autoConvertGlassBottles = true
 	#If enabled adds a craftable umbrella that can be used to slowly walk though sunlight without taking damage
-	umbrella = true
+	umbrella = false
 	#Enforce tent generation in any overworld world, even if they were not included in modded or datapack world-types on purpose. Does not affect Server#disableTentGeneration or disable tent generation itself.
 	enforceOverworldTentGeneration = true
 

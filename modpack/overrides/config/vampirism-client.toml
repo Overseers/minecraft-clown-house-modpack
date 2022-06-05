@@ -13,7 +13,7 @@
 		#Render skill menu button in inventory
 		skillButtonEnable = true
 		#Action Order in Select Action Screen (reset with ""), unnamed actions will appended
-		actionOrder = "vampirism:bat,vampirism:dark_blood_projectile,vampirism:disguise_vampire,vampirism:freeze,vampirism:half_invulnerable,vampirism:regen,vampirism:sunscreen,vampirism:summon_bat,vampirism:teleport,vampirism:vampire_invisibility,vampirism:vampire_rage,vampirism:hissing,vampirism:awareness_hunter,vampirism:disguise_hunter,vampirism:potion_resistance_hunter"
+		actionOrder = "vampirism:bat,vampirism:dark_blood_projectile,vampirism:disguise_vampire,vampirism:freeze,vampirism:half_invulnerable,vampirism:regen,vampirism:sunscreen,vampirism:summon_bat,vampirism:teleport,vampirism:vampire_invisibility,vampirism:vampire_rage,vampirism:hissing,vampirism:awareness_hunter,vampirism:disguise_hunter,vampirism:potion_resistance_hunter,werewolves:human_form,werewolves:beast_form,werewolves:survival_form,werewolves:howling,werewolves:rage,werewolves:sense,werewolves:fear,werewolves:leap,werewolves:hide_name"
 		#Force the guiSkillButton to the following y position from the center of the inventory, default value is -22
 		#Range: > -2147483648
 		overrideGuiSkillButtonY = -22
