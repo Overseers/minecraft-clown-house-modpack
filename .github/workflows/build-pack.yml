@@ -16,6 +16,8 @@ jobs:
           python-version: 3.9.0
       - run: "pip3 install requests"
       - name: "Build server files"
+        env:
+          CURSEFORGE_API_KEY: "${{secrets.CURSEFORGE_API_KEY}}"
         run: "python ./scripts/create_server_files.py"
       - run: "cd server_files ; zip -r ../server_files.zip ; cd .."
       - uses: "ncipollo/release-action@v1"
