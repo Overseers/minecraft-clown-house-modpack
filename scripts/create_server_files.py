@@ -29,7 +29,7 @@ with open(f"./server_files/forge-installer.jar", "wb") as f:
 	f.write(forge_installer.content)
 
 # Get the mod jar files
-print(f"Getting ({len(manifest["files"])}) mod files:")
+print(f"Getting ({len(manifest['files'])}) mod files:")
 headers = { "x-api-key": os.environ["CURSEFORGE_API_KEY"] }
 for file_desc in manifest["files"]:
 	mod_data = requests.get(f"https://api.curseforge.com/v1/mods/{file_desc['projectID']}/files/{file_desc['fileID']}", headers = headers).json()
