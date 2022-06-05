@@ -13,6 +13,7 @@ then
 	echo 'Setting up Forge'
 	java -jar ${FORGE_INSTALLER_FILE} --installServer
 	rm ${FORGE_INSTALLER_FILE} "${FORGE_INSTALLER_FILE}.log"
+	mv forge-*.jar forge.jar
 	echo 'Forge setup'
 fi
 
