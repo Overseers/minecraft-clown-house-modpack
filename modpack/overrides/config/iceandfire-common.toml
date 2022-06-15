@@ -272,7 +272,7 @@
 
 	[Mobs.Cyclops]
 		#True if cyclops caves are allowed to spawn
-		"Spawn Cyclopes Caves" = true
+		"Spawn Cyclopes Caves" = false
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Spawn Cyclops Cave Chance" = 100
@@ -291,7 +291,7 @@
 		#Range: 1.0 ~ 10000.0
 		"Cyclops Attack Strength" = 15.0
 		#True if wandering cyclopes are allowed to spawn
-		"Spawn Wandering Cyclopes" = true
+		"Spawn Wandering Cyclopes" = false
 		#How many blocks away can cyclopes detect sheep. Note that increasing this could cause lag.
 		#Range: 1 ~ 10000
 		"Cyclopes Sheep Search Length" = 17
@@ -304,7 +304,7 @@
 		#Range: 1.0 ~ 10000.0
 		"Troll Attack Strength" = 10.0
 		#True if trolls are allowed to spawn
-		"Spawn Trolls" = true
+		"Spawn Trolls" = false
 		#A double check to see if the game can spawn trolls. Higher number = lower chance to spawn.
 		#Range: 0 ~ 10000
 		"Troll Spawn Check Chance" = 10

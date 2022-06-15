@@ -9,7 +9,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Clown Pack",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "DarknessCommand",
   "files": [{
       "projectID": 240630,
@@ -282,6 +282,11 @@
       "required": true
     },
     {
+      "projectID": 349559,
+      "fileID": 3349236,
+      "required": true
+    },
+    {
       "projectID": 224791,
       "fileID": 3803382,
       "required": true
@@ -372,13 +377,13 @@
       "required": true
     },
     {
-      "projectID": 314002,
-      "fileID": 3055679,
+      "projectID": 383070,
+      "fileID": 3102237,
       "required": true
     },
     {
-      "projectID": 383070,
-      "fileID": 3102237,
+      "projectID": 314002,
+      "fileID": 3055679,
       "required": true
     },
     {
@@ -407,13 +412,13 @@
       "required": true
     },
     {
-      "projectID": 534610,
-      "fileID": 3801469,
+      "projectID": 351914,
+      "fileID": 3456505,
       "required": true
     },
     {
-      "projectID": 351914,
-      "fileID": 3456505,
+      "projectID": 534610,
+      "fileID": 3801469,
       "required": true
     },
     {
@@ -457,13 +462,13 @@
       "required": true
     },
     {
-      "projectID": 231095,
-      "fileID": 3593643,
+      "projectID": 256717,
+      "fileID": 3658432,
       "required": true
     },
     {
-      "projectID": 256717,
-      "fileID": 3658432,
+      "projectID": 231095,
+      "fileID": 3593643,
       "required": true
     },
     {
@@ -487,13 +492,13 @@
       "required": true
     },
     {
-      "projectID": 235577,
-      "fileID": 3098221,
+      "projectID": 242818,
+      "fileID": 3681973,
       "required": true
     },
     {
-      "projectID": 242818,
-      "fileID": 3681973,
+      "projectID": 235577,
+      "fileID": 3098221,
       "required": true
     },
     {
