@@ -14,3 +14,4 @@ Make any of your changes necessary to the configuration and open a PR. Once appr
 
 [0]: https://github.com/Overseers/minecraft-clown-house-modpack
 [1]: https://download.curseforge.com/
+
